@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getDictionary } from "@/i18n/dictionaries";
 import { isLocale } from "@/i18n/config";
@@ -6,6 +7,68 @@ import { isLocale } from "@/i18n/config";
 type PageProps = { params: Promise<{ locale: string }> };
 
 const quoteHref = "mailto:105792539@qq.com?subject=GIVE%20MEP%20Equipment%20-%20Request%20for%20Quotation";
+
+const valveContent = {
+  en: {
+    eyebrow: "Selected valve portfolio",
+    title: "Core valve types for international procurement",
+    description: "A focused selection from the supplied industrial and water-system catalogs. Final selection depends on medium, pressure, temperature, size, connection, material, actuation and applicable standards.",
+    viewCatalog: "View full catalog",
+    catalogTitle: "Complete valve catalogs",
+    catalogText: "Review the full product range, model references, dimensions and technical tables in the original catalogs.",
+    industrial: "Industrial Valve Catalog",
+    water: "Water System Valve Catalog",
+    note: "Electrical equipment remains part of our wider sourcing scope but is not featured in this catalog update.",
+    items: [
+      ["Gate Valves", "Isolation valves commonly considered for water, steam, oil and industrial pipelines."],
+      ["Globe Valves", "Flow shut-off and throttling options for industrial piping and process service."],
+      ["Check Valves", "Non-return valve options designed to help prevent reverse flow in piping systems."],
+      ["Ball Valves", "Quarter-turn manual, pneumatic and electric actuation options for efficient isolation."],
+      ["Butterfly Valves", "Compact flow-control options for water networks, building services and industrial systems."],
+      ["Control Valves", "Modulating valve options for pressure, flow and process-control requirements."],
+    ],
+  },
+  zh: {
+    eyebrow: "精选阀门产品",
+    title: "面向国际工程采购的常用阀门类别",
+    description: "以下内容精选自工业系统和水系统阀门手册。最终选型需结合介质、压力、温度、口径、连接方式、材质、驱动方式及适用标准确认。",
+    viewCatalog: "查看完整手册",
+    catalogTitle: "完整阀门产品手册",
+    catalogText: "在原始手册中查看全部产品系列、型号参考、外形尺寸和技术参数表。",
+    industrial: "工业系统阀门手册",
+    water: "水系统阀门手册",
+    note: "电气设备仍属于后续供应范围，但本次网页更新暂不重点展示。",
+    items: [
+      ["闸阀", "常用于水、蒸汽、油品及工业管线的启闭和隔断需求。"],
+      ["截止阀", "适用于工业管道和工艺系统中的截断及一定范围内的流量调节。"],
+      ["止回阀", "用于帮助防止管道介质倒流，提供多种结构形式选择。"],
+      ["球阀", "提供手动、气动和电动等驱动选择，适用于快速启闭。"],
+      ["蝶阀", "结构紧凑，适用于水系统、楼宇设施和工业流体控制。"],
+      ["调节阀", "面向压力、流量及工艺控制需求的调节型阀门选择。"],
+    ],
+  },
+  fr: {
+    eyebrow: "Sélection de robinetterie",
+    title: "Les principaux types de vannes pour les achats internationaux",
+    description: "Une sélection issue des catalogues de robinetterie industrielle et de réseaux d’eau. Le choix final dépend du fluide, de la pression, de la température, du diamètre, du raccordement, des matériaux, de l’actionnement et des normes applicables.",
+    viewCatalog: "Consulter le catalogue complet",
+    catalogTitle: "Catalogues complets de robinetterie",
+    catalogText: "Consultez toutes les gammes, références, dimensions et données techniques dans les catalogues d’origine.",
+    industrial: "Catalogue de robinetterie industrielle",
+    water: "Catalogue de robinetterie pour réseaux d’eau",
+    note: "Les équipements électriques restent dans notre périmètre d’approvisionnement, mais ne sont pas mis en avant dans cette mise à jour.",
+    items: [
+      ["Robinets-vannes", "Solutions d’isolement courantes pour l’eau, la vapeur, les hydrocarbures et les réseaux industriels."],
+      ["Robinets à soupape", "Solutions d’arrêt et de réglage pour tuyauteries industrielles et procédés."],
+      ["Clapets anti-retour", "Solutions destinées à limiter le retour du fluide dans les réseaux de tuyauterie."],
+      ["Robinets à tournant sphérique", "Versions manuelles, pneumatiques et électriques pour un isolement rapide."],
+      ["Vannes papillon", "Solutions compactes pour réseaux d’eau, bâtiments et installations industrielles."],
+      ["Vannes de régulation", "Solutions modulantes pour les besoins de pression, débit et contrôle de procédé."],
+    ],
+  },
+} as const;
+
+const valveImages = ["gate-valve.jpg", "globe-valve.jpg", "check-valve.jpg", "ball-valve.jpg", "butterfly-valve.jpg", "control-valve.jpg"];
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
@@ -27,27 +90,11 @@ function ArrowIcon() {
   );
 }
 
-function ProductVisual({ index }: { index: number }) {
-  const paths = [
-    <g key="valve"><circle cx="80" cy="67" r="30" /><path d="M20 67h30m60 0h30M80 37V18m-17 0h34M55 44l50 46M105 44 55 90" /></g>,
-    <g key="high"><path d="M30 103h100M46 103V48h68v55M58 48V30h44v18M64 63h32M64 77h32M64 91h32M80 30V16" /><circle cx="80" cy="16" r="4" /></g>,
-    <g key="low"><rect x="38" y="20" width="84" height="88" rx="2" /><path d="M51 34h58v22H51zM51 68h25v25H51zM84 68h25v25H84zM64 39v12m32-12v12M58 75h11m22 0h11" /></g>,
-  ];
-  return (
-    <div className="relative aspect-[4/3] overflow-hidden bg-[#e8eeeb]">
-      <div className="absolute inset-0 industrial-grid opacity-40" />
-      <svg viewBox="0 0 160 128" className="absolute inset-0 h-full w-full fill-none stroke-emerald-950 stroke-[1.3]" aria-hidden="true">
-        {paths[index]}
-      </svg>
-      <span className="absolute bottom-4 left-4 text-[10px] font-bold tracking-[0.22em] text-emerald-900/55">GIVE MEP / 0{index + 1}</span>
-    </div>
-  );
-}
-
 export default async function LocalizedHome({ params }: PageProps) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
   const home = getDictionary(locale).home;
+  const valves = valveContent[locale];
 
   return (
     <main>
@@ -94,21 +141,46 @@ export default async function LocalizedHome({ params }: PageProps) {
       <section id="products" className="scroll-mt-24 bg-white px-5 py-20 sm:px-8 lg:px-10 lg:py-28" aria-labelledby="products-title">
         <div className="mx-auto max-w-[1440px]">
           <div className="grid gap-7 lg:grid-cols-[0.75fr_1.25fr] lg:items-end">
-            <div><p className="section-label">{home.products.eyebrow}</p><h2 id="products-title" className="section-title mt-5">{home.products.title}</h2></div>
-            <p className="max-w-2xl text-base leading-7 text-slate-600 lg:justify-self-end">{home.products.description}</p>
+            <div><p className="section-label">{valves.eyebrow}</p><h2 id="products-title" className="section-title mt-5">{valves.title}</h2></div>
+            <p className="max-w-2xl text-base leading-7 text-slate-600 lg:justify-self-end">{valves.description}</p>
           </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {home.products.items.map((item, index) => (
-              <article key={item.title} className="group border border-slate-200 bg-white transition-transform duration-300 hover:-translate-y-1 hover:border-emerald-900/40 hover:shadow-xl hover:shadow-slate-950/5">
-                <ProductVisual index={index} />
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {valves.items.map((item, index) => (
+              <article key={item[0]} className="group overflow-hidden border border-slate-200 bg-white transition-transform duration-300 hover:-translate-y-1 hover:border-emerald-900/40 hover:shadow-xl hover:shadow-slate-950/5">
+                <div className="aspect-[4/3] overflow-hidden bg-slate-100">
+                  <Image src={`/products/valves/${valveImages[index]}`} alt={item[0]} width={1200} height={900} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
+                </div>
                 <div className="p-6 sm:p-7">
                   <p className="text-xs font-bold tracking-[0.18em] text-amber-700">0{index + 1}</p>
-                  <h3 className="mt-3 text-xl font-semibold leading-7 text-slate-950">{item.title}</h3>
-                  <p className="mt-4 min-h-24 text-sm leading-6 text-slate-600">{item.description}</p>
-                  <a href="#procurement" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-emerald-950">{home.common.viewProducts}<ArrowIcon /></a>
+                  <h3 className="mt-3 text-xl font-semibold leading-7 text-slate-950">{item[0]}</h3>
+                  <p className="mt-4 min-h-20 text-sm leading-6 text-slate-600">{item[1]}</p>
+                  <a href="#catalogs" className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-emerald-950">{valves.viewCatalog}<ArrowIcon /></a>
                 </div>
               </article>
             ))}
+          </div>
+          <p className="mt-8 border-l-2 border-amber-600 pl-4 text-sm leading-6 text-slate-600">{valves.note}</p>
+        </div>
+      </section>
+
+      <section id="catalogs" className="scroll-mt-24 bg-[#edf2ef] px-5 py-20 sm:px-8 lg:px-10 lg:py-24" aria-labelledby="catalogs-title">
+        <div className="mx-auto grid max-w-[1440px] gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+          <div>
+            <p className="section-label">PDF / DOWNLOAD</p>
+            <h2 id="catalogs-title" className="section-title mt-5">{valves.catalogTitle}</h2>
+            <p className="mt-6 max-w-xl text-base leading-7 text-slate-600">{valves.catalogText}</p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <a href="/brochures/industrial-valve-catalog.pdf" target="_blank" rel="noreferrer" className="group border border-emerald-950/15 bg-white p-7 transition-colors hover:border-emerald-900">
+              <span className="text-xs font-bold tracking-[0.18em] text-amber-700">PDF / 01</span>
+              <h3 className="mt-4 text-xl font-semibold text-slate-950">{valves.industrial}</h3>
+              <span className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-emerald-950">{valves.viewCatalog}<ArrowIcon /></span>
+            </a>
+            <a href="/brochures/water-system-valve-catalog.pdf" target="_blank" rel="noreferrer" className="group border border-emerald-950/15 bg-white p-7 transition-colors hover:border-emerald-900">
+              <span className="text-xs font-bold tracking-[0.18em] text-amber-700">PDF / 02</span>
+              <h3 className="mt-4 text-xl font-semibold text-slate-950">{valves.water}</h3>
+              <span className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-emerald-950">{valves.viewCatalog}<ArrowIcon /></span>
+            </a>
           </div>
         </div>
       </section>
