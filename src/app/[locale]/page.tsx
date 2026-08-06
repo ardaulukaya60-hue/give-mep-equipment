@@ -70,6 +70,104 @@ const valveContent = {
 
 const valveImages = ["gate-valve.jpg", "globe-valve.jpg", "check-valve.jpg", "ball-valve.jpg", "butterfly-valve.jpg", "control-valve.jpg"];
 
+const qualityContent = {
+  en: {
+    eyebrow: "Quality assurance",
+    title: "Documented systems for controlled valve supply",
+    description: "The supplied qualification file documents management systems, production licensing and product compliance held by Shouhe Valve Group Co., Ltd., the valve manufacturer represented in this product range.",
+    note: "Certificates are shown for procurement reference. Validity and applicability should be reconfirmed for the specific product, market and delivery date during quotation.",
+    view: "View certificate",
+    items: [
+      ["Special Equipment Production License", "Pressure piping component manufacturing license issued in China."],
+      ["ISO 9001 Quality Management", "Quality management system certification covering the sales of metal valves."],
+      ["ISO 14001 Environmental Management", "Environmental management system certification covering metal valve sales and related activities."],
+      ["ISO 45001 Occupational Health & Safety", "Occupational health and safety management system certification covering metal valve sales and related activities."],
+      ["CE Compliance - Ball Valve", "ECM certificate of compliance for the ball valve product category."],
+    ],
+  },
+  zh: {
+    eyebrow: "质量保障",
+    title: "以可核验的体系与产品资质支持阀门采购",
+    description: "所提供的资质文件记录了首核阀门集团有限公司在管理体系、特种设备生产许可及产品合规方面的相关证明，该公司为本次阀门产品资料所对应的制造企业。",
+    note: "证书图片供采购评估参考。具体产品、目标市场及交付日期所适用的证书范围和有效性，应在报价阶段再次确认。",
+    view: "查看证书",
+    items: [
+      ["特种设备生产许可证", "中国境内压力管道元件制造相关许可。"],
+      ["ISO 9001 质量管理体系", "认证范围包含金属阀门销售。"],
+      ["ISO 14001 环境管理体系", "认证范围包含金属阀门销售及相关管理活动。"],
+      ["ISO 45001 职业健康安全管理体系", "认证范围包含金属阀门销售及相关管理活动。"],
+      ["CE 合规证书 - 球阀", "由 ECM 出具、对应球阀产品类别的合规证明。"],
+    ],
+  },
+  fr: {
+    eyebrow: "Assurance qualité",
+    title: "Des systèmes documentés pour un approvisionnement maîtrisé",
+    description: "Le dossier de qualification fourni présente les systèmes de management, la licence de production et les documents de conformité de Shouhe Valve Group Co., Ltd., fabricant associé à cette gamme de robinetterie.",
+    note: "Les certificats sont présentés à titre de référence pour les achats. Leur validité et leur champ d’application doivent être reconfirmés selon le produit, le marché et la date de livraison lors de l’offre.",
+    view: "Voir le certificat",
+    items: [
+      ["Licence de production d’équipements spéciaux", "Licence chinoise relative à la fabrication de composants de tuyauterie sous pression."],
+      ["ISO 9001 - Management de la qualité", "Certification du système de management de la qualité couvrant la vente de vannes métalliques."],
+      ["ISO 14001 - Management environnemental", "Certification environnementale couvrant la vente de vannes métalliques et les activités associées."],
+      ["ISO 45001 - Santé et sécurité au travail", "Certification SST couvrant la vente de vannes métalliques et les activités associées."],
+      ["Conformité CE - Robinet à tournant sphérique", "Certificat de conformité ECM concernant la catégorie des robinets à tournant sphérique."],
+    ],
+  },
+} as const;
+
+const certificateImages = [
+  "special-equipment-production-license.jpg",
+  "iso-9001-quality-management.jpg",
+  "iso-14001-environmental-management.jpg",
+  "iso-45001-occupational-health-safety.jpg",
+  "ce-ball-valve.jpg",
+];
+
+const projectContent = {
+  en: {
+    eyebrow: "Selected references",
+    title: "Valve supply references across essential industries",
+    description: "The qualification file contains a partial performance list of 163 customer and project references. The selection below highlights representative applications without adding unverified supply scope, contract value or project outcomes.",
+    source: "Listed in the supplied qualification file",
+    items: [
+      ["West-East Gas Pipeline II - Gaoling Compressor Station", "Gas transmission infrastructure"],
+      ["Wuhan Metro Tianhe Airport Project", "Transport infrastructure"],
+      ["Fuqing Integrated Urban-Rural Water Supply - Phase I Pipeline", "Water infrastructure"],
+      ["Ningxia Qingtongxia Town Wastewater Treatment Plant", "Wastewater treatment"],
+      ["Sinopec Tianjin Hangu Lubricant Expansion Project", "Petrochemical industry"],
+      ["CATL New Energy Technology Co., Ltd.", "New energy manufacturing"],
+    ],
+  },
+  zh: {
+    eyebrow: "精选业绩",
+    title: "覆盖关键行业的阀门供货参考",
+    description: "资质文件收录了由企业提供的 163 条部分客户及项目业绩。以下选取具有代表性的应用名称进行展示，不补充未经证实的供货范围、合同金额或项目成果。",
+    source: "收录于所提供的企业资质文件",
+    items: [
+      ["西气东输二号线陕西高陵压气站", "天然气输送基础设施"],
+      ["武汉地铁天河机场项目", "交通基础设施"],
+      ["福清市城乡供水一体化一期管网工程", "供水基础设施"],
+      ["宁夏青铜峡镇污水处理厂", "污水处理"],
+      ["中石化天津汉沽润滑油扩建项目", "石油化工"],
+      ["宁德时代新能源科技股份有限公司", "新能源制造"],
+    ],
+  },
+  fr: {
+    eyebrow: "Références sélectionnées",
+    title: "Des références de fourniture pour des secteurs essentiels",
+    description: "Le dossier de qualification comprend une liste partielle de 163 références clients et projets. La sélection ci-dessous présente des applications représentatives sans ajouter de périmètre de fourniture, de montant contractuel ni de résultat non vérifié.",
+    source: "Référence figurant dans le dossier de qualification fourni",
+    items: [
+      ["Gazoduc Ouest-Est II - Station de compression de Gaoling", "Infrastructure de transport de gaz"],
+      ["Métro de Wuhan - Projet de l’aéroport Tianhe", "Infrastructure de transport"],
+      ["Réseau intégré d’alimentation en eau de Fuqing - Phase I", "Infrastructure hydraulique"],
+      ["Station d’épuration de Qingtongxia, Ningxia", "Traitement des eaux usées"],
+      ["Extension du site de lubrifiants Sinopec de Tianjin Hangu", "Industrie pétrochimique"],
+      ["CATL New Energy Technology Co., Ltd.", "Fabrication pour les nouvelles énergies"],
+    ],
+  },
+} as const;
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
@@ -95,6 +193,8 @@ export default async function LocalizedHome({ params }: PageProps) {
   if (!isLocale(locale)) notFound();
   const home = getDictionary(locale).home;
   const valves = valveContent[locale];
+  const quality = qualityContent[locale];
+  const projects = projectContent[locale];
 
   return (
     <main>
@@ -188,16 +288,16 @@ export default async function LocalizedHome({ params }: PageProps) {
       <section id="why-give" className="scroll-mt-24 bg-[#0a2b21] px-5 py-20 text-white sm:px-8 lg:px-10 lg:py-28" aria-labelledby="why-title">
         <div className="mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <p className="section-label text-amber-500">{home.why.eyebrow}</p>
+            <p className="section-label text-amber-400">{home.why.eyebrow}</p>
             <h2 id="why-title" className="section-title mt-5 text-white">{home.why.title}</h2>
-            <p className="mt-6 max-w-xl text-base leading-7 text-white/65">{home.why.description}</p>
+            <p className="mt-6 max-w-xl text-base leading-7 text-slate-100">{home.why.description}</p>
           </div>
           <div className="grid gap-px overflow-hidden border border-white/15 bg-white/15 sm:grid-cols-2">
             {home.why.items.map((item, index) => (
               <article key={item.title} className="bg-[#0a2b21] p-7 lg:p-9">
-                <span className="text-xs font-bold tracking-[0.2em] text-amber-500">0{index + 1}</span>
-                <h3 className="mt-5 text-xl font-semibold">{item.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-white/60">{item.description}</p>
+                <span className="text-xs font-bold tracking-[0.2em] text-amber-400">0{index + 1}</span>
+                <h3 className="mt-5 text-xl font-semibold text-white">{item.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-slate-200">{item.description}</p>
               </article>
             ))}
           </div>
@@ -237,16 +337,44 @@ export default async function LocalizedHome({ params }: PageProps) {
         </div>
       </section>
 
-      <section id="projects" className="scroll-mt-24 bg-slate-100 px-5 py-20 sm:px-8 lg:px-10 lg:py-28" aria-labelledby="projects-title">
+      <section id="quality" className="scroll-mt-24 bg-[#f4f6f5] px-5 py-20 sm:px-8 lg:px-10 lg:py-28" aria-labelledby="quality-title">
         <div className="mx-auto max-w-[1440px]">
-          <div className="max-w-3xl"><p className="section-label">{home.projects.eyebrow}</p><h2 id="projects-title" className="section-title mt-5">{home.projects.title}</h2><p className="mt-6 text-base leading-7 text-slate-600">{home.projects.description}</p></div>
-          <div className="mt-12 grid gap-5 md:grid-cols-3">
-            {[1, 2, 3].map((item) => (
-              <article key={item} className="border border-dashed border-slate-400 bg-white/60 p-7">
-                <div className="flex aspect-[16/9] items-center justify-center border border-slate-200 bg-white industrial-grid"><span className="text-5xl font-light text-emerald-950/15">0{item}</span></div>
-                <p className="mt-6 text-xs font-bold uppercase tracking-[0.16em] text-amber-700">{home.projects.status}</p>
-                <h3 className="mt-3 text-lg font-semibold text-slate-950">{home.projects.placeholderTitle}</h3>
-                <p className="mt-3 text-sm leading-6 text-slate-600">{home.projects.placeholderText}</p>
+          <div className="grid gap-7 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+            <div><p className="section-label">{quality.eyebrow}</p><h2 id="quality-title" className="section-title mt-5">{quality.title}</h2></div>
+            <p className="max-w-2xl text-base leading-7 text-slate-700 lg:justify-self-end">{quality.description}</p>
+          </div>
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+            {quality.items.map((item, index) => (
+              <a key={item[0]} href={`/certificates/${certificateImages[index]}`} target="_blank" rel="noreferrer" className="group flex flex-col overflow-hidden border border-slate-200 bg-white transition-all hover:-translate-y-1 hover:border-emerald-800/50 hover:shadow-xl hover:shadow-slate-950/5">
+                <div className="aspect-[3/4] overflow-hidden bg-slate-100 p-3">
+                  <Image src={`/certificates/${certificateImages[index]}`} alt={item[0]} width={850} height={1200} className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]" />
+                </div>
+                <div className="flex flex-1 flex-col border-t border-slate-200 p-5">
+                  <span className="text-[11px] font-bold tracking-[0.18em] text-amber-700">0{index + 1}</span>
+                  <h3 className="mt-3 text-base font-semibold leading-6 text-slate-950">{item[0]}</h3>
+                  <p className="mt-3 text-sm leading-6 text-slate-600">{item[1]}</p>
+                  <span className="mt-auto inline-flex items-center gap-2 pt-5 text-sm font-semibold text-emerald-900">{quality.view}<ArrowIcon /></span>
+                </div>
+              </a>
+            ))}
+          </div>
+          <p className="mt-8 border-l-2 border-amber-600 pl-4 text-sm leading-6 text-slate-700">{quality.note}</p>
+        </div>
+      </section>
+
+      <section id="projects" className="scroll-mt-24 bg-white px-5 py-20 sm:px-8 lg:px-10 lg:py-28" aria-labelledby="projects-title">
+        <div className="mx-auto max-w-[1440px]">
+          <div className="max-w-4xl"><p className="section-label">{projects.eyebrow}</p><h2 id="projects-title" className="section-title mt-5">{projects.title}</h2><p className="mt-6 max-w-3xl text-base leading-7 text-slate-700">{projects.description}</p></div>
+          <div className="mt-12 grid gap-px overflow-hidden border border-slate-300 bg-slate-300 md:grid-cols-2 lg:grid-cols-3">
+            {projects.items.map((item, index) => (
+              <article key={item[0]} className="group min-h-64 bg-[#f7f8f7] p-7 transition-colors hover:bg-[#edf2ef] lg:p-8">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-bold tracking-[0.18em] text-amber-700">0{index + 1}</span>
+                  <span className="h-px w-12 bg-emerald-900/30 transition-all group-hover:w-20" />
+                </div>
+                <p className="mt-10 text-xs font-bold uppercase tracking-[0.14em] text-emerald-800">{item[1]}</p>
+                <h3 className="mt-4 text-xl font-semibold leading-7 text-slate-950">{item[0]}</h3>
+                <p className="mt-6 text-xs leading-5 text-slate-500">{projects.source}</p>
               </article>
             ))}
           </div>
@@ -256,12 +384,12 @@ export default async function LocalizedHome({ params }: PageProps) {
       <section id="contact" className="scroll-mt-24 bg-emerald-950 px-5 py-20 text-white sm:px-8 lg:px-10 lg:py-24" aria-labelledby="cta-title">
         <div className="mx-auto grid max-w-[1440px] gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
           <div className="max-w-3xl">
-            <p className="section-label text-amber-500">{home.cta.eyebrow}</p>
-            <h2 id="cta-title" className="mt-5 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">{home.cta.title}</h2>
-            <p className="mt-5 max-w-2xl text-base leading-7 text-white/65">{home.cta.description}</p>
-            <div className="mt-8 flex flex-col gap-3 text-sm text-white/75 sm:flex-row sm:gap-8">
-              <p><span className="text-white/45">{home.cta.emailLabel}: </span><a className="hover:text-white" href="mailto:105792539@qq.com">105792539@qq.com</a></p>
-              <p><span className="text-white/45">{home.cta.phoneLabel}: </span><a className="hover:text-white" href="tel:+8613871215656">+86 138 7121 5656</a></p>
+            <p className="section-label text-amber-400">{home.cta.eyebrow}</p>
+            <h2 id="cta-title" className="mt-5 text-4xl font-semibold tracking-[-0.035em] text-white sm:text-5xl">{home.cta.title}</h2>
+            <p className="mt-5 max-w-2xl text-base leading-7 text-slate-100">{home.cta.description}</p>
+            <div className="mt-8 flex flex-col gap-3 text-sm text-white sm:flex-row sm:gap-8">
+              <p><span className="text-slate-300">{home.cta.emailLabel}: </span><a className="underline-offset-4 hover:underline" href="mailto:105792539@qq.com">105792539@qq.com</a></p>
+              <p><span className="text-slate-300">{home.cta.phoneLabel}: </span><a className="underline-offset-4 hover:underline" href="tel:+8613871215656">+86 138 7121 5656</a></p>
             </div>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">
