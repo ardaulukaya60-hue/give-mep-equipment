@@ -53,7 +53,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       contactUs: "Contact Us",
     },
     footer: {
-      summary: "Industrial valves and electrical equipment for international engineering procurement and wholesale supply.",
+      summary: "Industrial valves for international engineering procurement and wholesale supply.",
       navigationTitle: "Explore",
       contactTitle: "Contact",
       companyTitle: "Company",
@@ -64,23 +64,21 @@ const dictionaries: Record<Locale, Dictionary> = {
       copyright: "All rights reserved.",
     },
     home: {
-      seoTitle: "Valves & Electrical Equipment for Global Projects",
-      seoDescription: "GIVE MEP Equipment supplies valves, high-voltage and low-voltage electrical equipment for engineering procurement and wholesale customers worldwide.",
+      seoTitle: "Industrial Valves for Global Engineering Projects",
+      seoDescription: "GIVE MEP Equipment supplies industrial valves for engineering procurement and wholesale customers worldwide.",
       common: { viewProducts: "View Products", requestQuote: "Request a Quote", contactUs: "Contact Us", learnMore: "Explore Solutions" },
       hero: {
         eyebrow: "Industrial supply for global procurement",
-        title: "Valves and electrical equipment for demanding projects.",
-        description: "GIVE MEP Equipment supports engineering buyers and wholesalers with valves, high-voltage equipment, and low-voltage equipment for projects across Europe, the Americas, Africa, and Southeast Asia.",
+        title: "Industrial valves for demanding projects.",
+        description: "GIVE MEP Equipment supports engineering buyers and wholesalers with valve procurement for projects across Europe, the Americas, Africa, and Southeast Asia.",
         note: "Clear requirements. Practical matching. Responsive communication.",
       },
       products: {
-        eyebrow: "Core product categories",
-        title: "Essential equipment for MEP and industrial procurement",
-        description: "Explore our three core supply categories. Product selections are matched to your technical requirements and project context.",
+        eyebrow: "Core valve categories",
+        title: "Valve options for MEP and industrial procurement",
+        description: "Explore commonly requested valve categories. Product selections are matched to your technical requirements and project context.",
         items: [
           { title: "Valves", description: "Valve solutions for flow control requirements across infrastructure, building services, and industrial applications." },
-          { title: "High-Voltage Electrical Equipment", description: "Equipment for high-voltage power systems, selected according to project specifications and applicable standards." },
-          { title: "Low-Voltage Electrical Equipment", description: "Equipment for low-voltage distribution and control needs in commercial, infrastructure, and industrial environments." },
         ],
       },
       why: {
@@ -90,19 +88,19 @@ const dictionaries: Record<Locale, Dictionary> = {
         items: [
           { title: "Established in 2011", description: "GIVE MEP Equipment has operated since 2011, with teams based in Shanghai and Wuhan, China." },
           { title: "International procurement focus", description: "We serve engineering procurement teams and wholesale buyers working across international markets." },
-          { title: "Three focused categories", description: "Our offering centers on valves, high-voltage equipment, and low-voltage equipment." },
+          { title: "Valve-focused supply", description: "This website now focuses on valve products and related procurement support." },
           { title: "Requirement-led matching", description: "We prioritize clear communication so product options can be matched to the stated project requirements." },
         ],
       },
       industries: {
         eyebrow: "Industries & solutions",
         title: "Supporting diverse project environments",
-        description: "Our product categories can support procurement requirements across a range of infrastructure, building, industrial, and power applications.",
+        description: "Our valve categories can support procurement requirements across a range of infrastructure, building and industrial applications.",
         items: [
-          { title: "Water & Infrastructure", description: "Flow control and electrical supply needs for water, utility, and public infrastructure applications." },
+          { title: "Water & Infrastructure", description: "Flow control needs for water, utility, and public infrastructure applications." },
           { title: "Industrial Facilities", description: "Equipment sourcing support for process, manufacturing, and general industrial environments." },
           { title: "Commercial Buildings", description: "MEP equipment requirements for commercial properties and building services systems." },
-          { title: "Energy & Power Distribution", description: "High- and low-voltage equipment for power distribution requirements and related applications." },
+          { title: "Energy & Pipeline Networks", description: "Valve options for pipeline, utility and related energy-support applications." },
         ],
       },
       procurement: {
@@ -148,7 +146,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       contactUs: "联系我们",
     },
     footer: {
-      summary: "面向国际工程采购与批发业务，提供工业阀门及高低压电气设备。",
+      summary: "面向国际工程采购与批发业务，提供工业阀门产品支持。",
       navigationTitle: "快速导航",
       contactTitle: "联系方式",
       companyTitle: "公司信息",
@@ -159,23 +157,21 @@ const dictionaries: Record<Locale, Dictionary> = {
       copyright: "版权所有。",
     },
     home: {
-      seoTitle: "面向全球工程项目的阀门及电气设备",
-      seoDescription: "GIVE MEP Equipment 为全球工程采购商与批发客户提供阀门、高压电气设备和低压电气设备。",
+      seoTitle: "面向全球工程项目的工业阀门",
+      seoDescription: "GIVE MEP Equipment 为全球工程采购商与批发客户提供工业阀门采购支持。",
       common: { viewProducts: "查看产品", requestQuote: "获取报价", contactUs: "联系我们", learnMore: "了解解决方案" },
       hero: {
         eyebrow: "服务全球工程采购",
-        title: "为严苛工程需求提供阀门及电气设备。",
-        description: "GIVE MEP Equipment 面向欧美、非洲和东南亚的工程采购商及批发商，提供阀门、高压电气设备和低压电气设备采购支持。",
+        title: "为严苛工程需求提供工业阀门。",
+        description: "GIVE MEP Equipment 面向欧美、非洲和东南亚的工程采购商及批发商，提供阀门产品采购支持。",
         note: "明确需求 · 合理匹配 · 及时沟通",
       },
       products: {
-        eyebrow: "核心产品类别",
-        title: "满足机电与工业采购需求的关键设备",
-        description: "了解我们的三大核心供应类别。产品选择将结合技术要求和实际项目应用进行匹配。",
+        eyebrow: "核心阀门类别",
+        title: "满足机电与工业采购需求的阀门产品",
+        description: "了解常用阀门品类。产品选择将结合技术要求和实际项目应用进行匹配。",
         items: [
           { title: "阀门", description: "面向基础设施、建筑机电和工业应用中的流体控制需求，提供阀门产品匹配支持。" },
-          { title: "高压电气设备", description: "依据项目技术规格和适用标准，为高压电力系统提供设备选型与供应支持。" },
-          { title: "低压电气设备", description: "适用于商业建筑、基础设施和工业环境中的低压配电及控制需求。" },
         ],
       },
       why: {
@@ -185,19 +181,19 @@ const dictionaries: Record<Locale, Dictionary> = {
         items: [
           { title: "成立于2011年", description: "GIVE MEP Equipment 成立于2011年，团队位于中国上海和武汉。" },
           { title: "专注国际采购", description: "服务面向国际市场开展业务的工程采购团队和批发客户。" },
-          { title: "聚焦三大品类", description: "核心供应范围包括阀门、高压电气设备和低压电气设备。" },
+          { title: "聚焦阀门供应", description: "本站当前聚焦阀门产品及相关采购支持。" },
           { title: "以需求匹配为导向", description: "重视前期需求沟通，以明确的项目条件作为产品匹配依据。" },
         ],
       },
       industries: {
         eyebrow: "行业应用与解决方案",
         title: "支持多类工程应用场景",
-        description: "我们的产品类别可用于基础设施、建筑、工业和电力应用中的相关采购需求。",
+        description: "我们的阀门产品可用于基础设施、建筑机电和工业应用中的相关采购需求。",
         items: [
-          { title: "水务与基础设施", description: "面向水务、公用工程和公共基础设施应用中的流体控制及电气设备需求。" },
+          { title: "水务与基础设施", description: "面向水务、公用工程和公共基础设施应用中的流体控制需求。" },
           { title: "工业设施", description: "为工艺、制造及通用工业环境提供设备采购匹配支持。" },
           { title: "商业建筑", description: "服务商业物业和建筑机电系统中的设备采购需求。" },
-          { title: "能源与配电", description: "面向电力配送及相关应用中的高低压电气设备需求。" },
+          { title: "能源与管网", description: "面向管线、公用工程和能源配套系统中的阀门需求。" },
         ],
       },
       procurement: {
@@ -243,7 +239,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       contactUs: "Nous contacter",
     },
     footer: {
-      summary: "Vannes industrielles et équipements électriques destinés aux achats de projets internationaux et à la distribution professionnelle.",
+      summary: "Vannes industrielles destinees aux achats de projets internationaux et a la distribution professionnelle.",
       navigationTitle: "Navigation",
       contactTitle: "Contact",
       companyTitle: "Entreprise",
@@ -254,23 +250,21 @@ const dictionaries: Record<Locale, Dictionary> = {
       copyright: "Tous droits réservés.",
     },
     home: {
-      seoTitle: "Vannes et équipements électriques pour projets internationaux",
-      seoDescription: "GIVE MEP Equipment fournit des vannes ainsi que des équipements électriques haute et basse tension aux acheteurs de projets et distributeurs internationaux.",
+      seoTitle: "Vannes industrielles pour projets internationaux",
+      seoDescription: "GIVE MEP Equipment fournit des vannes industrielles aux acheteurs de projets et distributeurs internationaux.",
       common: { viewProducts: "Voir les produits", requestQuote: "Demander un devis", contactUs: "Nous contacter", learnMore: "Découvrir les solutions" },
       hero: {
         eyebrow: "Approvisionnement industriel international",
-        title: "Vannes et équipements électriques pour les projets exigeants.",
-        description: "GIVE MEP Equipment accompagne les acheteurs de projets et les distributeurs en Europe, dans les Amériques, en Afrique et en Asie du Sud-Est pour leurs besoins en vannes et en équipements électriques haute et basse tension.",
+        title: "Vannes industrielles pour les projets exigeants.",
+        description: "GIVE MEP Equipment accompagne les acheteurs de projets et les distributeurs en Europe, dans les Ameriques, en Afrique et en Asie du Sud-Est pour leurs besoins en robinetterie industrielle.",
         note: "Besoins clairs. Sélection pertinente. Communication réactive.",
       },
       products: {
-        eyebrow: "Catégories principales",
-        title: "Des équipements essentiels pour les achats MEP et industriels",
-        description: "Découvrez nos trois catégories principales. La sélection des produits s’effectue selon vos exigences techniques et le contexte du projet.",
+        eyebrow: "Categories de vannes",
+        title: "Des vannes pour les achats MEP et industriels",
+        description: "Decouvrez les categories de vannes couramment demandees. La selection s'effectue selon vos exigences techniques et le contexte du projet.",
         items: [
           { title: "Vannes", description: "Des solutions de robinetterie pour la régulation des fluides dans les infrastructures, les bâtiments et les applications industrielles." },
-          { title: "Équipements électriques haute tension", description: "Des équipements destinés aux systèmes haute tension, sélectionnés selon les spécifications du projet et les normes applicables." },
-          { title: "Équipements électriques basse tension", description: "Des équipements pour la distribution et la commande basse tension dans les environnements tertiaires, industriels et d’infrastructure." },
         ],
       },
       why: {
@@ -280,19 +274,19 @@ const dictionaries: Record<Locale, Dictionary> = {
         items: [
           { title: "Fondée en 2011", description: "GIVE MEP Equipment exerce ses activités depuis 2011, avec des équipes à Shanghai et Wuhan, en Chine." },
           { title: "Orientation internationale", description: "Nous accompagnons les équipes d’achats de projets et les distributeurs actifs sur les marchés internationaux." },
-          { title: "Trois catégories ciblées", description: "Notre offre se concentre sur les vannes et les équipements électriques haute et basse tension." },
+          { title: "Approvisionnement axe sur les vannes", description: "Ce site se concentre desormais sur les produits de robinetterie et l'assistance aux achats associee." },
           { title: "Sélection guidée par le besoin", description: "Nous privilégions un échange précis afin de rapprocher les options produits des exigences communiquées." },
         ],
       },
       industries: {
         eyebrow: "Secteurs & solutions",
         title: "Au service de différents environnements de projet",
-        description: "Nos catégories de produits peuvent répondre aux besoins d’approvisionnement des infrastructures, bâtiments, sites industriels et réseaux électriques.",
+        description: "Nos categories de vannes peuvent repondre aux besoins d'approvisionnement des infrastructures, batiments et sites industriels.",
         items: [
-          { title: "Eau & infrastructures", description: "Besoins en régulation des fluides et équipements électriques pour l’eau, les réseaux publics et les infrastructures." },
+          { title: "Eau & infrastructures", description: "Besoins en regulation des fluides pour l'eau, les reseaux publics et les infrastructures." },
           { title: "Sites industriels", description: "Accompagnement des achats pour les environnements de process, de fabrication et les installations industrielles." },
           { title: "Bâtiments tertiaires", description: "Besoins en équipements MEP pour les immeubles commerciaux et leurs systèmes techniques." },
-          { title: "Énergie & distribution électrique", description: "Équipements haute et basse tension pour les besoins de distribution électrique et applications associées." },
+          { title: "Energie & reseaux de tuyauterie", description: "Solutions de vannes pour les reseaux, les utilites et les applications de support energetique." },
         ],
       },
       procurement: {

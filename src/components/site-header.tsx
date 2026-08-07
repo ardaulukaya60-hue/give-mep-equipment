@@ -41,9 +41,9 @@ export function SiteHeader({ locale, dictionary }: SiteHeaderProps) {
 
         <div className="ml-auto hidden items-center gap-3 xl:flex">
           <LanguageSwitcher currentLocale={locale} label={dictionary.languageLabel} />
-          <a href="mailto:105792539@qq.com?subject=GIVE%20MEP%20Equipment%20-%20Request%20for%20Quotation" className="bg-emerald-950 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-900">
+          <Link href={`/${locale}/#inquiry`} className="bg-emerald-950 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-900">
             {navigation.requestQuote}
-          </a>
+          </Link>
         </div>
 
         <div className="ml-auto flex items-center gap-3 xl:hidden">
@@ -80,7 +80,7 @@ export function SiteHeader({ locale, dictionary }: SiteHeaderProps) {
             })}
           </div>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
-            <a href="mailto:105792539@qq.com?subject=GIVE%20MEP%20Equipment%20-%20Request%20for%20Quotation" className="bg-emerald-950 px-5 py-3.5 text-center text-sm font-semibold text-white">{navigation.requestQuote}</a>
+            <Link href={`/${locale}/#inquiry`} className="bg-emerald-950 px-5 py-3.5 text-center text-sm font-semibold text-white">{navigation.requestQuote}</Link>
             <Link href={`/${locale}/#contact`} className="border border-emerald-950 px-5 py-3.5 text-center text-sm font-semibold text-emerald-950">{navigation.contactUs}</Link>
           </div>
         </nav>

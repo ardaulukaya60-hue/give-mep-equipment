@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s | GIVE MEP Equipment",
   },
   description:
-    "Industrial valves and high- and low-voltage electrical equipment for global engineering procurement.",
+    "Industrial valves for global engineering procurement.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
