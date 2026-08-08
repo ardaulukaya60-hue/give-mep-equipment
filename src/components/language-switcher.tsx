@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { locales, type Locale } from "@/i18n/config";
 
-const labels: Record<Locale, string> = { en: "EN", zh: "中文", fr: "FR" };
+const labels: Record<Locale, string> = { en: "EN", zh: "中文", fr: "FR", de: "DE" };
 
 export function LanguageSwitcher({ currentLocale, label, light = false }: { currentLocale: Locale; label: string; light?: boolean }) {
   const pathname = usePathname();

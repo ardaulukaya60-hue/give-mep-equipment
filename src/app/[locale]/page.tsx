@@ -66,6 +66,25 @@ const valveContent = {
       ["Vannes de regulation", "Solutions modulantes pour les besoins de pression, debit et controle de procede."],
     ],
   },
+  de: {
+    eyebrow: "Ausgewaehltes Armaturenportfolio",
+    title: "Wichtige Armaturentypen fuer internationale Beschaffung",
+    description:
+      "Eine fokussierte Auswahl fuer Wasser-, Infrastruktur-, Industrie- und Gebaeudetechnikprojekte. Die finale Auswahl haengt von Medium, Druck, Temperatur, Nennweite, Anschluss, Material, Antrieb und geltenden Normen ab.",
+    viewProducts: "Armaturen ansehen",
+    catalogTitle: "Zugang zu Armaturenkatalogen",
+    catalogText:
+      "Originale PDF-Kataloge koennen Herstelleradresse und Telefonnummer enthalten und werden daher nicht direkt auf der Website veroeffentlicht. Senden Sie Ihre Anfrage, und wir stellen passende Katalogseiten oder eine bereinigte Produktreferenz bereit.",
+    catalogCta: "Katalog per Anfrage erhalten",
+    items: [
+      ["Absperrschieber", "Absperrarmaturen fuer Wasser, Dampf, Oel und industrielle Rohrleitungen."],
+      ["Absperrventile", "Absperr- und Drosseloptionen fuer industrielle Rohrleitungen und Prozessanwendungen."],
+      ["Rueckschlagventile", "Rueckflussverhinderer zur Begrenzung von Rueckstroemung in Rohrleitungssystemen."],
+      ["Kugelhaehne", "Vierteldrehende Ausfuehrungen mit manueller, pneumatischer oder elektrischer Betaetigung."],
+      ["Absperrklappen", "Kompakte Loesungen fuer Wassernetze, Gebaeudetechnik und industrielle Fluidsysteme."],
+      ["Regelventile", "Modulierende Armaturen fuer Druck-, Durchfluss- und Prozessregelung."],
+    ],
+  },
 } as const satisfies Record<Locale, unknown>;
 
 const valveImages = ["gate-valve.jpg", "globe-valve.jpg", "check-valve.jpg", "ball-valve.jpg", "butterfly-valve.jpg", "control-valve.jpg"];
@@ -117,6 +136,22 @@ const qualityContent = {
       ["ISO 14001 - Management environnemental", "Certification environnementale couvrant la vente de vannes metalliques et les activites associees."],
       ["ISO 45001 - Sante et securite au travail", "Certification SST couvrant la vente de vannes metalliques et les activites associees."],
       ["Conformite CE - Robinet a tournant spherique", "Certificat de conformite ECM concernant la categorie des robinets a tournant spherique."],
+    ],
+  },
+  de: {
+    eyebrow: "Qualitaetssicherung",
+    title: "Dokumentierte Systeme fuer kontrollierte Armaturenlieferung",
+    description:
+      "Die bereitgestellte Qualifikationsdatei dokumentiert Managementsysteme, Produktionslizenz und Produktkonformitaet von Shouhe Valve Group Co., Ltd., dem Hersteller dieser Armaturenreihe.",
+    note:
+      "Die Zertifikate dienen als Referenz fuer den Einkauf. Gueltigkeit und Anwendbarkeit sollten fuer Produkt, Zielmarkt und Lieferdatum im Angebotsprozess erneut bestaetigt werden.",
+    view: "Zertifikat ansehen",
+    items: [
+      ["Produktionslizenz fuer Sonderausruestung", "Chinesische Lizenz fuer die Herstellung von Druckrohrleitungskomponenten."],
+      ["ISO 9001 Qualitaetsmanagement", "Zertifizierung des Qualitaetsmanagementsystems fuer den Vertrieb von Metallarmaturen."],
+      ["ISO 14001 Umweltmanagement", "Umweltmanagement-Zertifizierung fuer Metallarmaturenvertrieb und zugehoerige Aktivitaeten."],
+      ["ISO 45001 Arbeits- und Gesundheitsschutz", "Zertifizierung fuer Arbeits- und Gesundheitsschutz im Bereich Metallarmaturenvertrieb."],
+      ["CE-Konformitaet - Kugelhahn", "ECM-Konformitaetszertifikat fuer die Produktkategorie Kugelhahn."],
     ],
   },
 } as const satisfies Record<Locale, unknown>;
@@ -286,6 +321,60 @@ const projectContent = {
       },
     ],
   },
+  de: {
+    eyebrow: "Ausgewaehlte Referenzen",
+    title: "Armaturenreferenzen in wichtigen Branchen",
+    description:
+      "Die Qualifikationsdatei enthaelt eine Teilliste von Kunden- und Projektreferenzen. Klicken Sie auf eine Referenz, um ein kurzes Profil zu sehen. Die Bilder sind konservative Anwendungsvisualisierungen, bis Projektfotos bereitgestellt und freigegeben sind.",
+    source: "Aufgefuehrt in der bereitgestellten Qualifikationsdatei",
+    imageNote: "Anwendungsbild; exaktes Projektfoto noch zu bestaetigen.",
+    open: "Projektprofil oeffnen",
+    close: "Projektprofil",
+    items: [
+      {
+        title: "West-East Gas Pipeline II - Verdichterstation Gaoling",
+        sector: "Gastransport-Infrastruktur",
+        summary:
+          "Eine Referenz aus dem Bereich Energieinfrastruktur aus der bereitgestellten Leistungsliste. Fuer die Beschaffung sollten Druckklasse, Medium, Anschluss und Antrieb geprueft werden.",
+        image: "/projects/industrial-pipeline-valves.jpg",
+      },
+      {
+        title: "Wuhan Metro - Projekt Flughafen Tianhe",
+        sector: "Verkehrsinfrastruktur",
+        summary:
+          "Eine Referenz im Bereich oeffentlicher Verkehrsinfrastruktur. Relevante Armaturenanfragen koennen Wassersysteme, Gebaeudetechnik oder Versorgungsnetze betreffen.",
+        image: "/products/valves/butterfly-valve.jpg",
+      },
+      {
+        title: "Integrierte Wasserleitung Fuqing - Phase I",
+        sector: "Wasserinfrastruktur",
+        summary:
+          "Eine Referenz fuer ein Wasserversorgungsnetz. Typische Punkte sind Absperrung, Rueckflussverhinderung, Durchflussregelung, Nennweite und Einbaubedingungen.",
+        image: "/products/valves/gate-valve.jpg",
+      },
+      {
+        title: "Abwasserbehandlungsanlage Qingtongxia, Ningxia",
+        sector: "Abwasserbehandlung",
+        summary:
+          "Eine Referenz im Bereich Abwasserbehandlung. Bei der Auswahl sind Korrosionsumgebung, Schalthaeufigkeit, Dichtanforderungen und Wartungszugang wichtig.",
+        image: "/products/valves/check-valve.jpg",
+      },
+      {
+        title: "Sinopec Tianjin Hangu Schmierstoff-Erweiterungsprojekt",
+        sector: "Petrochemische Industrie",
+        summary:
+          "Eine petrochemische Referenz aus der Leistungsliste. Finale Armaturenoptionen haengen von Medium, Temperatur, Druck und Projektstandards ab.",
+        image: "/products/valves/globe-valve.jpg",
+      },
+      {
+        title: "CATL New Energy Technology Co., Ltd.",
+        sector: "Fertigung fuer neue Energien",
+        summary:
+          "Eine Referenz aus der New-Energy-Fertigung. Armaturenbedarf kann Werksversorgung oder prozessnahe Hilfssysteme betreffen und sollte im Einzelfall bestaetigt werden.",
+        image: "/products/valves/ball-valve.jpg",
+      },
+    ],
+  },
 } as const satisfies Record<Locale, unknown>;
 
 const inquiryContent = {
@@ -333,6 +422,21 @@ const inquiryContent = {
     submit: "Envoyer la demande",
     privacy: "Aucun paiement, base de donnees ni televersement de fichier n'est connecte dans cette version.",
   },
+  de: {
+    eyebrow: "Anfragefenster",
+    title: "Senden Sie Ihren Armaturenbedarf",
+    description:
+      "Teilen Sie Produktname, Betriebsbedingungen, Norm, Menge und Lieferland mit. Das Formular ist fuer Netlify Forms vorbereitet, damit Anfragen von der Live-Website gesammelt werden koennen.",
+    name: "Name",
+    company: "Unternehmen",
+    email: "E-Mail",
+    phone: "Telefon / WhatsApp",
+    country: "Lieferland",
+    product: "Armaturentyp oder Produktname",
+    message: "Anforderungsdetails",
+    submit: "Anfrage senden",
+    privacy: "In dieser Version sind keine Zahlung, Datenbank oder Datei-Uploads angebunden.",
+  },
 } as const satisfies Record<Locale, unknown>;
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -342,7 +446,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: home.seoTitle,
     description: home.seoDescription,
-    alternates: { canonical: `/${locale}`, languages: { en: "/en", "zh-CN": "/zh", fr: "/fr" } },
+    alternates: { canonical: `/${locale}`, languages: { en: "/en", "zh-CN": "/zh", fr: "/fr", de: "/de" } },
     openGraph: { title: home.seoTitle, description: home.seoDescription, type: "website" },
   };
 }
