@@ -41,7 +41,7 @@ export function SiteHeader({ locale, dictionary }: SiteHeaderProps) {
 
         <div className="ml-auto hidden items-center gap-3 xl:flex">
           <LanguageSwitcher currentLocale={locale} label={dictionary.languageLabel} />
-          <Link href={`/${locale}/#inquiry`} className="bg-emerald-950 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-900">
+          <Link href={`/${locale}/#inquiry`} className="bg-emerald-950 px-5 py-3 text-sm font-semibold !text-white transition-colors hover:bg-emerald-900">
             {navigation.requestQuote}
           </Link>
         </div>
@@ -80,7 +80,7 @@ export function SiteHeader({ locale, dictionary }: SiteHeaderProps) {
             })}
           </div>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
-            <Link href={`/${locale}/#inquiry`} className="bg-emerald-950 px-5 py-3.5 text-center text-sm font-semibold text-white">{navigation.requestQuote}</Link>
+            <Link href={`/${locale}/#inquiry`} className="bg-emerald-950 px-5 py-3.5 text-center text-sm font-semibold !text-white">{navigation.requestQuote}</Link>
             <Link href={`/${locale}/#contact`} className="border border-emerald-950 px-5 py-3.5 text-center text-sm font-semibold text-emerald-950">{navigation.contactUs}</Link>
           </div>
         </nav>

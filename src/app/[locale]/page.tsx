@@ -494,7 +494,7 @@ export default async function LocalizedHome({ params }: PageProps) {
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-700 sm:text-xl">{home.hero.description}</p>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-              <a href={quoteHref} className="inline-flex items-center justify-center gap-3 bg-emerald-950 px-6 py-4 text-sm font-semibold text-white transition-colors hover:bg-emerald-900">
+              <a href={quoteHref} className="inline-flex items-center justify-center gap-3 bg-emerald-950 px-6 py-4 text-sm font-semibold !text-white transition-colors hover:bg-emerald-900">
                 {home.common.requestQuote}<ArrowIcon />
               </a>
               <a href="#products" className="inline-flex items-center justify-center gap-3 border border-emerald-950 px-6 py-4 text-sm font-semibold text-emerald-950 transition-colors hover:bg-white">
@@ -556,7 +556,7 @@ export default async function LocalizedHome({ params }: PageProps) {
             <span className="text-xs font-bold tracking-[0.18em] text-amber-700">PDF ACCESS</span>
             <h3 className="mt-4 text-2xl font-semibold text-slate-950">{valves.catalogCta}</h3>
             <p className="mt-4 text-sm leading-6 text-slate-700">{home.procurement.closing}</p>
-            <a href="#inquiry" className="mt-8 inline-flex items-center gap-3 bg-emerald-950 px-6 py-4 text-sm font-semibold text-white hover:bg-emerald-900">
+            <a href="#inquiry" className="mt-8 inline-flex items-center gap-3 bg-emerald-950 px-6 py-4 text-sm font-semibold !text-white hover:bg-emerald-900">
               {home.common.requestQuote}<ArrowIcon />
             </a>
           </div>
@@ -608,7 +608,7 @@ export default async function LocalizedHome({ params }: PageProps) {
             <h2 id="procurement-title" className="section-title mt-5">{home.procurement.title}</h2>
             <p className="mt-6 text-base leading-7 text-slate-700">{home.procurement.description}</p>
             <p className="mt-7 text-sm leading-6 text-slate-700">{home.procurement.closing}</p>
-            <a href="#inquiry" className="mt-9 inline-flex items-center gap-3 bg-emerald-950 px-6 py-4 text-sm font-semibold text-white transition-colors hover:bg-emerald-900">{home.common.requestQuote}<ArrowIcon /></a>
+            <a href="#inquiry" className="mt-9 inline-flex items-center gap-3 bg-emerald-950 px-6 py-4 text-sm font-semibold !text-white transition-colors hover:bg-emerald-900">{home.common.requestQuote}<ArrowIcon /></a>
           </div>
           <div className="border border-slate-200 bg-[#edf2ef] p-7 sm:p-10">
             <h3 className="text-sm font-bold uppercase tracking-[0.16em] text-emerald-950">{home.procurement.fieldsLabel}</h3>
@@ -714,7 +714,7 @@ export default async function LocalizedHome({ params }: PageProps) {
               <textarea name="message" required rows={7} className="border border-slate-300 bg-white px-4 py-3 text-base font-normal text-slate-950 outline-none transition-colors focus:border-emerald-900" />
             </label>
             <div className="grid gap-4 sm:col-span-2 sm:grid-cols-[auto_1fr] sm:items-center">
-              <button type="submit" className="inline-flex items-center justify-center gap-3 bg-emerald-950 px-6 py-4 text-sm font-semibold text-white transition-colors hover:bg-emerald-900">
+              <button type="submit" className="inline-flex items-center justify-center gap-3 bg-emerald-950 px-6 py-4 text-sm font-semibold !text-white transition-colors hover:bg-emerald-900">
                 {inquiry.submit}<ArrowIcon />
               </button>
               <p className="text-xs leading-5 text-slate-600">{inquiry.privacy}</p>
