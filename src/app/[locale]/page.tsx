@@ -180,7 +180,7 @@ const projectContent = {
         sector: "Gas transmission infrastructure",
         summary:
           "A representative energy-infrastructure reference from the supplied performance list. For procurement use, valve selection should be checked against pressure class, medium, connection and actuation requirements.",
-        image: "/projects/industrial-pipeline-valves.jpg",
+        image: "/products/valves/control-valve.jpg",
       },
       {
         title: "Wuhan Metro Tianhe Airport Project",
@@ -233,7 +233,7 @@ const projectContent = {
         title: "西气东输二号线陕西高陵压气站",
         sector: "天然气输送基础设施",
         summary: "资质文件业绩表中的能源基础设施参考。具体阀门匹配需结合压力等级、介质、连接方式和驱动要求确认。",
-        image: "/projects/industrial-pipeline-valves.jpg",
+        image: "/products/valves/control-valve.jpg",
       },
       {
         title: "武汉地铁天河机场项目",
@@ -282,7 +282,7 @@ const projectContent = {
         sector: "Infrastructure de transport de gaz",
         summary:
           "Reference d'infrastructure energetique issue de la liste fournie. La selection des vannes doit etre verifiee selon la classe de pression, le fluide, le raccordement et l'actionnement.",
-        image: "/projects/industrial-pipeline-valves.jpg",
+        image: "/products/valves/control-valve.jpg",
       },
       {
         title: "Metro de Wuhan - Projet de l'aeroport Tianhe",
@@ -336,7 +336,7 @@ const projectContent = {
         sector: "Gastransport-Infrastruktur",
         summary:
           "Eine Referenz aus dem Bereich Energieinfrastruktur aus der bereitgestellten Leistungsliste. Fuer die Beschaffung sollten Druckklasse, Medium, Anschluss und Antrieb geprueft werden.",
-        image: "/projects/industrial-pipeline-valves.jpg",
+        image: "/products/valves/control-valve.jpg",
       },
       {
         title: "Wuhan Metro - Projekt Flughafen Tianhe",
@@ -507,10 +507,14 @@ export default async function LocalizedHome({ params }: PageProps) {
           <div className="relative mx-auto w-full max-w-xl" aria-hidden="true">
             <div className="aspect-square border border-emerald-950/15 bg-white/55 p-5 sm:p-8">
               <div className="relative h-full overflow-hidden border border-emerald-950/20 bg-slate-100">
-                <Image src="/projects/industrial-pipeline-valves.jpg" alt="" fill className="object-cover" priority />
-                <div className="absolute inset-0 bg-emerald-950/20" />
-                <span className="absolute left-5 top-5 text-[10px] font-bold tracking-[0.24em] text-white">VALVE SUPPLY</span>
-                <span className="absolute bottom-5 right-5 text-5xl font-light text-white/45 sm:text-7xl">GIVE</span>
+                <div className="absolute inset-0 industrial-grid opacity-70" />
+                <svg viewBox="0 0 500 500" className="absolute inset-0 h-full w-full fill-none stroke-emerald-950">
+                  <circle cx="250" cy="250" r="112" strokeWidth="2" />
+                  <circle cx="250" cy="250" r="50" strokeWidth="1" />
+                  <path d="M250 55v83M250 362v83M55 250h83M362 250h83M112 112l79 79M309 309l79 79M388 112l-79 79M191 309l-79 79" strokeWidth="2" />
+                  <path d="M165 165l170 170M335 165 165 335" strokeWidth="4" />
+                  <path d="M190 72h120M72 190v120M428 190v120M190 428h120" strokeWidth="1" />
+                </svg>
               </div>
             </div>
             <div className="absolute -bottom-4 -left-4 h-24 w-24 border-b-2 border-l-2 border-amber-600" />
@@ -531,7 +535,7 @@ export default async function LocalizedHome({ params }: PageProps) {
             {valves.items.map((item, index) => (
               <article key={item[0]} className="group overflow-hidden border border-slate-200 bg-white transition-transform duration-300 hover:-translate-y-1 hover:border-emerald-900/40 hover:shadow-xl hover:shadow-slate-950/5">
                 <div className="aspect-[4/3] overflow-hidden bg-slate-100">
-                  <Image src={`/products/valves/${valveImages[index]}`} alt={item[0]} width={1200} height={900} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
+                  <Image src={`/products/valves/${valveImages[index]}`} alt={item[0]} width={1200} height={900} className="h-full w-full object-cover grayscale transition-transform duration-500 group-hover:scale-[1.03]" />
                 </div>
                 <div className="p-6 sm:p-7">
                   <p className="text-xs font-bold tracking-[0.18em] text-amber-700">0{index + 1}</p>
@@ -663,7 +667,7 @@ export default async function LocalizedHome({ params }: PageProps) {
               <details key={item.title} className="group overflow-hidden border border-slate-200 bg-white">
                 <summary className="grid cursor-pointer list-none gap-5 p-0 marker:hidden">
                   <div className="aspect-[4/3] overflow-hidden bg-slate-100">
-                    <Image src={item.image} alt={item.title} width={1200} height={900} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
+                    <Image src={item.image} alt={item.title} width={1200} height={900} className="h-full w-full object-cover grayscale transition-transform duration-500 group-hover:scale-[1.03]" />
                   </div>
                   <div className="p-6 pt-0">
                     <div className="flex items-center justify-between gap-4">
