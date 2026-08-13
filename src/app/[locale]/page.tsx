@@ -667,7 +667,7 @@ export default async function LocalizedHome({ params }: PageProps) {
               <details key={item.title} className="group overflow-hidden border border-slate-200 bg-white">
                 <summary className="grid cursor-pointer list-none gap-5 p-0 marker:hidden">
                   <div className="aspect-[4/3] overflow-hidden bg-slate-100">
-                    <Image src={item.image} alt={item.title} width={1200} height={900} className="h-full w-full object-cover grayscale transition-transform duration-500 group-hover:scale-[1.03]" />
+                    <Image src={item.image} alt={item.title} width={1200} height={900} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
                   </div>
                   <div className="p-6 pt-0">
                     <div className="flex items-center justify-between gap-4">
