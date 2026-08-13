@@ -180,7 +180,7 @@ const projectContent = {
         sector: "Gas transmission infrastructure",
         summary:
           "A representative energy-infrastructure reference from the supplied performance list. For procurement use, valve selection should be checked against pressure class, medium, connection and actuation requirements.",
-        image: "/products/valves/control-valve.jpg",
+        image: "/projects/industrial-pipeline-valves.jpg",
       },
       {
         title: "Wuhan Metro Tianhe Airport Project",
@@ -233,7 +233,7 @@ const projectContent = {
         title: "西气东输二号线陕西高陵压气站",
         sector: "天然气输送基础设施",
         summary: "资质文件业绩表中的能源基础设施参考。具体阀门匹配需结合压力等级、介质、连接方式和驱动要求确认。",
-        image: "/products/valves/control-valve.jpg",
+        image: "/projects/industrial-pipeline-valves.jpg",
       },
       {
         title: "武汉地铁天河机场项目",
@@ -282,7 +282,7 @@ const projectContent = {
         sector: "Infrastructure de transport de gaz",
         summary:
           "Reference d'infrastructure energetique issue de la liste fournie. La selection des vannes doit etre verifiee selon la classe de pression, le fluide, le raccordement et l'actionnement.",
-        image: "/products/valves/control-valve.jpg",
+        image: "/projects/industrial-pipeline-valves.jpg",
       },
       {
         title: "Metro de Wuhan - Projet de l'aeroport Tianhe",
@@ -336,7 +336,7 @@ const projectContent = {
         sector: "Gastransport-Infrastruktur",
         summary:
           "Eine Referenz aus dem Bereich Energieinfrastruktur aus der bereitgestellten Leistungsliste. Fuer die Beschaffung sollten Druckklasse, Medium, Anschluss und Antrieb geprueft werden.",
-        image: "/products/valves/control-valve.jpg",
+        image: "/projects/industrial-pipeline-valves.jpg",
       },
       {
         title: "Wuhan Metro - Projekt Flughafen Tianhe",
