@@ -535,7 +535,7 @@ export default async function LocalizedHome({ params }: PageProps) {
             {valves.items.map((item, index) => (
               <article key={item[0]} className="group overflow-hidden border border-slate-200 bg-white transition-transform duration-300 hover:-translate-y-1 hover:border-emerald-900/40 hover:shadow-xl hover:shadow-slate-950/5">
                 <div className="aspect-[4/3] overflow-hidden bg-slate-100">
-                  <Image src={`/products/valves/${valveImages[index]}`} alt={item[0]} width={1200} height={900} className="h-full w-full object-cover grayscale transition-transform duration-500 group-hover:scale-[1.03]" />
+                  <Image src={`/products/valves/${valveImages[index]}`} alt={item[0]} width={1200} height={900} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
                 </div>
                 <div className="p-6 sm:p-7">
                   <p className="text-xs font-bold tracking-[0.18em] text-amber-700">0{index + 1}</p>
